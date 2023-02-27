@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   constructor(){}
 
   ngOnInit(): void{
-    console.table(this.pokemonList);
+    //console.table(this.pokemonList);
   }
 
   selectPokemon(pokemonId: string){
