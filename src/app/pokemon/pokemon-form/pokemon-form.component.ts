@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pokemon } from '../pokemon';
 
 @Component({
   selector: 'app-pokemon-form',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   ]
 })
 export class PokemonFormComponent {
+  pokemon: Pokemon;
 
+  onSubmit(){
+    
+  }
 }
