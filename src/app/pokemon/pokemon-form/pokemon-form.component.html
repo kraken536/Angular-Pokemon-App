@@ -26,7 +26,7 @@
                         #hp="ngModel">
                     <div [hidden]="hp.valid || hp.pristine"
                         class="card-panel red accent-1">
-                        Les points de vie du pokémon sont compris entre 0 et
+                        Les points de vie du pokémon sont compris entre 0 et 999.
                     </div>
                 </div>
 
@@ -42,13 +42,17 @@
                 </div>
 
                 <!-- Pokemon Types -->
-                <form class="form-group">,
+                <form class="form-group">
                     <label for="types">Types</label>
                     <p *ngFor="let type of types">
                         <label>
-                            <input type="checkbox" class="filled-in" id="{{type}}"
-                            [value]="type" [checked]="hasType(type)" [disabled]="!isTypesValid(type)"
-                            (change)="selectType($event, type)">
+                            <input type="checkbox" 
+                                class="filled-in" 
+                                id="{{type}}"
+                                [value]="type" 
+                                [checked]="hasType(type)" 
+                                [disabled]="!isTypesValid(type)"
+                                (change)="selectType($event, type)">
                             <span [attr.for]="type">
                                 <div class="{{ type | pokemonTypeColor}}">
                                     {{ type }}
