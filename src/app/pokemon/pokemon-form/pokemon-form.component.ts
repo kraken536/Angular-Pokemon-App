@@ -57,7 +57,8 @@ export class PokemonFormComponent implements OnInit {
   }
 
   /*
-  In this component, we are using the PokemonService to update the pokemon. 
+  In this component, we are using the PokemonService to update the pokemon.
+  The RxJS library is also used in this component. 
    */
   
 }
