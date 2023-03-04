@@ -56,8 +56,5 @@ export class PokemonFormComponent implements OnInit {
     .subscribe(() => this.router.navigate(['/pokemon', this.pokemon.id]));
   }
 
-  /*
-  The RxJS library is also used in this component. 
-   */
   
 }
