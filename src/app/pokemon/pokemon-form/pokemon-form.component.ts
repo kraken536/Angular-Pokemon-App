@@ -60,5 +60,5 @@ export class PokemonFormComponent implements OnInit {
 }
 
 /*
-shitty v1
+shitty v2
  */
