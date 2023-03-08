@@ -13,7 +13,7 @@ export class Pokemon{
         hp = 100,
         cp = 10,
         picture: string = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/xxx.png',
-        types: string[] = ["normal"],
+        types: string[] = ["Normal"],
         created: Date = new Date()
         ){
             this.name = name;
