@@ -23,12 +23,12 @@ export class PokemonService {
       catchError(error => this.handleError(error, undefined))
     );
   }
-
+  
   searchPokemonList(term: string): Observable<Pokemon[]>{
     return this.httpClient.get<Pokemon[]>(`api/pokemon/?name=${term}`)
     .pipe(
       tap((response)=> this.log(response)),
-      catchError(error => this.handleError(error, []))
+      catchError(error => this.handleError(error, [])),
     );
   }
 
