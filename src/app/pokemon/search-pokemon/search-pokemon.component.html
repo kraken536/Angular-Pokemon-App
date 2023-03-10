@@ -1,1 +1,25 @@
-<p>search-pokemon works!</p>
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="card">
+            <div class="card-content">
+                <div class="input-field">
+                    <input 
+                        #searchBox 
+                        type="text" 
+                        (keyup)="search(searchBox.value)"
+                        placeholder="Search a Pokemon"
+                    />
+                    <div class="collection">
+                        <a 
+                            *ngFor="let pokemon of pokemons$ | async"
+                            (click) = "goToDetailPokemon(pokemon)"
+                            class="collection-item"
+                        >
+                            {{ pokemon.name }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
