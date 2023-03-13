@@ -29,7 +29,10 @@ export class PokemonService {
     if(term.length <= 1){
       return of([]); //This line will return an empty array for the condition.
     }
-    //The condition above is used to reduce the amount of server requests when the search term is not complete.
+    /*
+    The condition above is used to reduce the amount of server requests 
+    when the search term is not complete.
+    */
     return this.httpClient.get<Pokemon[]>(`api/pokemon/?name=${term}`)
     .pipe(
       tap((response)=> this.log(response)),
