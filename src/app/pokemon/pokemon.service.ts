@@ -25,6 +25,10 @@ export class PokemonService {
   }
   
   searchPokemonList(term: string): Observable<Pokemon[]>{
+
+    if(term.length <= 1){
+      return of([]); //This line will return an empty array for the condition.
+    }
     return this.httpClient.get<Pokemon[]>(`api/pokemon/?name=${term}`)
     .pipe(
       tap((response)=> this.log(response)),
