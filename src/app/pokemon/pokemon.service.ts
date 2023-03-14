@@ -30,7 +30,8 @@ export class PokemonService {
       return of([]); //This line will return an empty array for the condition.
     }
     /*
-    The condition above is used to reduce the amount of server requests 
+    The condition above is used to reduce the 
+    amount of server requests 
     when the search term is not complete.
     */
     return this.httpClient.get<Pokemon[]>(`api/pokemon/?name=${term}`)
