@@ -32,7 +32,8 @@ export class PokemonService {
     /*
     The condition above is used to reduce the 
     amount of server requests 
-    when the search term is not complete.
+    when the search term is 
+    not complete.
     */
     return this.httpClient.get<Pokemon[]>(`api/pokemon/?name=${term}`)
     .pipe(
