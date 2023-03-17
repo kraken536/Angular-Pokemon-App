@@ -20,7 +20,7 @@ export class Pokemon{
             this.hp = hp;
             this.cp = cp;
             this.picture = picture;
-            this.types;
+            this.types = types;
             this.created; 
         }
     
