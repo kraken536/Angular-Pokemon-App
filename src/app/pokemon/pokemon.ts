@@ -21,7 +21,7 @@ export class Pokemon{
             this.cp = cp;
             this.picture = picture;
             this.types = types;
-            this.created; 
+            this.created = created; 
         }
     
 }
