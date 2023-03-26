@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class LoaderComponent {
-
-}
+export class LoaderComponent { }
